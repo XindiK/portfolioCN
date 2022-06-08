@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS and icon -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="icon/icon.png" />
+
+    <!-- external scripts: bootstrap, Jquery, vimeo-autoplay -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="https://raw.github.com/vimeo/player-api/master/javascript/froogaloop.js"></script>
+
+    <!-- internal scripts: -->
+    <script src="main.js"></script>
+
+    <title>Xindi Kang</title>
+</head>
+
+<body>
+    <!-- container for entire page -->
+    <div class="container justify-content-center my-container">
+        <!---------------------------------------- Title and Navbar (with hidden portal)------------------------------------>
+        <div class="row justify-content-center header-row">
+            <div id="Navbar"
+                class="col-md-4 col-lg-6 title-col d-flex justify-content-lg-start justify-content-md-center justify-content-sm-center justify-content-center align-items-end">
+                <a href="index.html">Xindi Kang</a>
+            </div>
+            <div id="Navbar"
+                class="col-md-8 col-lg-6 tabs-col d-flex justify-content-lg-start justify-content-md-center justify-content-sm-center justify-content-center align-items-end">
+                <button id=btn1><a href="#about">About</a></button>
+                <button id=btn2><a href="#portfolio">Portfolio</a></button>
+                <button id=btn3><a href="#contact">Contact</a></button>
+            </div>
+        </div>
+        <!-- <div class="row body-row">
+            <div class="col cont-col"> -->
+        <div id="catImg" class="frontPage">
+            <img id="catbase" src="/icon/catBin.png" alt="catBinbase">
+            <!-- <img id="cattop" src="/icon/catBin.gif" alt="catBintop" display = "none">
+            <button id="hidden" class="hidden" background-color = "transparent">hidden button</div> -->
+        </div>
+    
+        <!---------------------------------------- About ----------------------------------------->
+        <div id="about" class="tabcontent">
+            <div class="containter">
+                <div class="row">
+                    <div class="desc-col d-flex col-sm-12 col-md-4 col-lg-4 float-lg-end justify-content-center">
+                        <img src="/icon/SelfPortrait.jpg" style="width: 20vw;">
+                    </div>
+                    <div class=" desc-col d-flex col-sm-12 col-md-8 col-lg-8 justify-content-center">
+                        <p>
+                            Xindi Kang is a researcher and artist working with interactive media. She is interested in
+                            interfacing
+                            between human and technologies through voice and movements. She designs experiences that
+                            inspire
+                            the
+                            users to see and hear themselves in different ways. Her research and professional interest
+                            lies
+                            in
+                            human
+                            computer interaction and user experience design. She is currently working towards her
+                            master's
+                            degree at
+                            the Media Arts and Technology program at the University of California, Santa Barbara.
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------------- Portfolio Thumbnails ----------------------------------------->
+        <div id="portfolio" class="tabcontent">
+            <div class="row my-row">
+                <div class="col-md-4 box">
+                    <p id="text">
+                        Aurora<br><span>Data Visualization | Processing</span>
+                    </p>
+                    <img id="proj1" src="images/cover/datavis.png">
+                </div>
+                <div class="col-md-4 box">
+                    <p id="text">
+                        Oscilla<br><span>Interactive Installation | Allolib + Pd</span>
+                    </p>
+                    <img id="proj2" src="images/cover/MSME.jpg">
+                </div>
+                <div class="col-md-4 box">
+                    <p id="text">
+                        Luminaria<br><span>LED Installation | Arduino</span>
+                    </p>
+                    <img id="proj3" src="images/cover/luminaria.png">
+                </div>
+            </div>
+            <div class="row my-row">
+                <div class="col-md-4 box">
+                    <p id="text">
+                        GeoD<br><span>Data Visualization | Google Maps JS API</span>
+                    </p>
+                    <img id="proj4" src="images/cover/GeoD.png">
+                </div>
+                <div class="col-md-4 box">
+                    <p id="text">
+                        Invisible Machine<br><span>Exhibition | Web Design/Curation</span>
+                    </p>
+                    <img id="proj5" src="images/cover/eoys_copy.png">
+                </div>
+                <div class="col-md-4 box">
+                    <p id="text">
+                        Painting Series<br><span>Paintings | Oil on canvas</span>
+                    </p>
+                    <img id="proj6" src="images/cover/change.png">
+                </div>
+            </div>
+            <div class="row my-row">
+                <!-- <div class="col-md-4 box">
+                        <p id="text">
+                            Handwriting Coach<br><span>Haptics Project | Chai 3D</span>
+                        </p>
+                        <img id="proj7" src="images/cover/haptic.png">
+                    </div> 
+                    <div class="col-md-4 box">
+                        <p id="text">
+                            Soft Robotic Hand<br><span>Pneumatic Robot | Arduino</span>
+                        </p>
+                        <img id="proj8" src="images/cover/haptic.png">
+                    </div>
+                    <div class="col-md-4 box">
+                        <p id="text">
+                        Acoustic Aura<br><span>VR Project | HTC Vive + Unity</span>
+                        </p>
+                        <img id="proj9" src="images/cover/eoys.png">
+                    </div> -->
+            </div>
+        </div>
+
+        <div id="contact" class="tabcontent">
+            <p>xindi[at]ucsb[dot]edu</p>
+        </div>
+        <!---------------------------------------- Project Details ----------------------------------------->
+
+
+
+        <!---------------------------------------- Project 1 ----------------------------------------->
+        <div class="projects" id="project1">
+            <div class="container justify-content-center my-container">
+                <div class="row justify-content-center header-row">
+                    <div class="desc-col col-sm-12 col-md-12 col-lg-6 d-flex align-items-start">
+                        <p>
+                            <br>
+                            <br>
+                            Aurora
+
+                            <br>
+                            <br>
+                            <span>Aurora is a 3D data visualization of the relationship between people’s level of curiousity
+                                for the
+                                aurora borealis and the actual insensity of the aurora borealis in the North Pole. The
+                                visualization demonstrates book-checkout data
+                                from
+                                the Seattle Public Library and the solarwind intensity data from NASA from 2006-2014.
+                                The raw data sets were
+                                processed through SQL and Python Jupyter Notebook and then visualized in a spherical
+                                coordinate system to allow 4 dimensions of information (month, year, dewey class, and
+                                level of interest/ intensity) to exist simutaneously. Users can scroll
+                                through 10 years of data with the GUI element and see the
+                                fluctuation between years animated. They can also turn on and off different
+                                scales such as month, year, and dewey class with key press interaction.
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-start">
+                        <iframe id="vimeoWrap1" src="https://player.vimeo.com/video/164850913" width="640" height="400"
+                            frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <button id="back">Back</button>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------------- Project 2 ----------------------------------------->
+        <div class="projects" id="project2">
+            <div class="container justify-content-center my-container">
+                <div class="row justify-content-center header-row">
+                    <div class="desc-col col-sm-12 col-md-12 col-lg-6 d-flex align-items-start">
+                        <p>
+
+                            <br>
+                            <br>
+                            Oscilla
+
+                            <br>
+                            <br>
+                            <span>
+
+                                Sound can be visualized in a number of ways. Different forms of representation
+                                are
+                                typically used as analytical tools in the context of scientific inquiry. Oscilla
+                                is
+                                an
+                                audio-visual installation that allows the audience to interact with a waveform
+                                with
+                                their own voice through a microphone, and experience both the acoustic and
+                                visual
+                                results. The audience is encouraged by the visual feedback from the waveform and
+                                the
+                                audio feedback from the ring-modulation filter to produce more interesting
+                                results
+                                with
+                                their voice. With more experimenting, the audience can deduce certain patterns
+                                hidden in
+                                the algorithm of the visual pattern and gain control over them.
+                                <br>
+                                <br>
+                                // In collaboration with <a href="http://www.rodneyduplessis.com/#home">Rodney
+                                    Duplessis</a>
+                                <br>
+                                <br>
+                                // Currently Exhibiting at <a href="https://seehearmove.com/artworks/">Museum of Sensory
+                                    and
+                                    Movement Experiences</a>
+                            </span>
+
+                        </p>
+
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-start">
+                        <iframe id="vimeoWrap2" src="https://player.vimeo.com/video/343328915" width="640" height="400"
+                            frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <br>
+                    </div>
+                    <button id="back">Back</button>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------------- Project 3 ----------------------------------------->
+        <div class="projects" id="project3">
+            <div class="container justify-content-center my-container">
+                <div class="row justify-content-center header-row">
+                    <div class="desc-col col-sm-12 col-md-12 col-lg-6 d-flex align-items-start">
+                        <p>
+
+                            <br>
+                            <br>
+                            Luminaria
+
+                            <br>
+                            <br>
+                            <span>Luminaria is an LED installation as part of IV Lightworks exhibition. LEDs
+                                installed on
+                                a
+                                bridge in Anisquoio Park, with colors and patters responding to incoming
+                                traffic
+                                (pedestrians, bikes and skateboards) detected by transducers attached
+                                underneath the
+                                bridge. Responses are made programmable by four Arduino units
+
+                                <br>
+                                <br>
+                                // In collaboration with: David Aleman, Hsin Hsuan Chen, Chris Hoang,
+                                Intae Hwang,
+                                Xindi
+                                Kang, Lu Liu, Wen Liu, Brenda Morales, Andrew Piepenbrink, PJ Powers,
+                                Rebecca
+                                Prieto,
+                                Annika Tan, Leonardo Vargas, Muhammad Hafiz Wan Rosli, Dan Wang, Carmen
+                                Wen,
+                                Junxiang
+                                Yao
+                                <br>
+                                <br>
+                                // Exhibited June 2016 - June 2017, Anisq'Oyo Park, Isla Vista, CA
+                            </span>
+
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-start">
+                        <iframe id="vimeoWrap3" src="https://player.vimeo.com/video/335996948" width="640" height="400"
+                            frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <br>
+                    </div>
+
+                    <button id="back">Back</button>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------------- Project 4 ----------------------------------------->
+        <div class="projects" id="project4">
+            <div class="container justify-content-center my-container">
+                <div class="row justify-content-center header-row">
+                    <div class="desc-col col-sm-12 col-md-12 col-lg-6 d-flex align-items-start">
+                        <p>
+
+                            <br>
+                            <br>
+                            GeoD
+
+                            <br>
+                            <br>
+                            <span>
+
+                                GeoD visualizes geographical information (locations and entities with
+                                geocoded
+                                information) contained in topic models. It can be used to analyze
+                                locations
+                                discussed in
+                                the whole corpus underlying a whole model or in a specific topic.
+
+                                The geocoded information that MetadataGeoD maps is gathered from the
+                                corpus for a
+                                topic
+                                model first through a “wikification” process (using the Illinois
+                                Wikifier; see <a href=" L. Ratinov et al., 2011">L.
+                                    Ratinov et al., 2011</a>) that confirms the recognition of named
+                                entities by
+                                checking for
+                                correspondence to locations, organizations, etc., for which there are
+                                articles in
+                                Wikipedia, and secondly through collecting latitude/longitude
+                                information for the
+                                data.
+                                (However, not all possible named entities can be recognized and geocoded
+                                as
+                                locations in
+                                this way.)
+                                <br>
+                                <br>
+                                // <a href="https://culturallife-h.herokuapp.com/?topicNum=89">Working Version of Geod</a> with 250 Topic Models from WE1S Corpus
+                                <br>
+                                <be>
+                                // In collaboration with <a href="https://www.researchgate.net/profile/Dan_Baciu">Dan
+                                    Baciu</a>
+                                and <a href src="https://sihwapark.com/">Sihwa Park</a>
+                                <br>
+                                <br>
+                                // Developed for the <a href="https://we1s.ucsb.edu/about/">WE1S
+                                    Project</a>
+                                included in the <a
+                                    href="https://we1s.ucsb.edu/research/we1s-tools-and-software/topic-model-observatory/tmo-guide/tmo-guide-geod/">Topic
+                                    Model Observatory</a>
+                                <br>
+                                <br>
+                                // Publications:
+                                <a
+                                    href="https://doi.org/10.1016/j.biosystems.2020.104208">https://doi.org/10.1016/j.biosystems.2020.104208</a>
+                                <a href="https://doi.org/10.31219/osf.io/896wb">https://doi.org/10.31219/osf.io/896wb</a>
+                            </span>
+
+                        </p>
+
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-start">
+
+                        <iframe id="vimeoWrap4" src="https://player.vimeo.com/video/495040084" width="640" height="400"
+                            frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+                    </div>
+                    <button id="back">Back</button>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------------- Project 5 ----------------------------------------->
+        <div class="projects" id="project5">
+            <div class="container justify-content-center my-container">
+                <div class="row justify-content-center header-row">
+                    <div class="desc-col col-sm-12 col-md-12 col-lg-6 d-flex align-items-center">
+                        <p>
+
+                            <br>
+                            <br>
+                            MAT End of Year Show 2018 -- InVisible Machine
+
+                            <br>
+                            <br>
+                            <span>
+
+                                <a href="https://www.mat.ucsb.edu/eoys2018/">MAT End of Year Show</a> is a curated exhibition featuring media art works and research demos from the Media Arts and Technology program. Each year we welcome hundreds of visitors from all around the world to celebrate a year of extraordinary work with us. Our theme this year is 'Invisible Machine', representing the mechanism of inducing transformation in the world of Media Arts. At MAT, our community research is the art of the “invisible becoming visible” in every field, from revealing the abstracted processes between input and output of a machine, to turning the complicated scientific data into shapes and colors. As technologists and artists, we weave through this diverse research in novel ways,creating new works that transcend the present way we view the world. Our show is the product of this process, and we invite all to join us in its celebration.
+                                <br>
+                                <br>
+                                // Show Website: <a href="https://show.mat.ucsb.edu/2018">show.mat.ucsb.edu/2018</a><br>
+                                // Show Highlights:<a href="https://www.mat.ucsb.edu/eoys2018/">www.mat.ucsb.edu/eoys2018/</a>
+                            </span>
+                        </p>
+
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-start">
+
+                        <iframe id="vimeoWrap5"src="https://www.youtube.com/embed/2p6kt2ufVpM?rel=0"  width="640" height="400"
+                            frameborder="0" allow="encrypted-media" allowfullscreen=""></iframe>
+
+                    </div>
+
+                    <button id="back">Back</button>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------------- Project 6 ----------------------------------------->
+        <div class="projects" id="project6">
+            <div class="container justify-content-center my-container">
+                <div class="row justify-content-center header-row">
+                    <div class="desc-col col-sm-12 col-md-12 col-lg-12 d-flex align-items-center">
+                        <p>
+                            <center></center>
+                            <div class="paintingDesc">
+                                <span style="width:500">
+                                    // This series of oil paintings are dedicated to my parents, for they are the source of
+                                    my perseverance and the guiding forces for my aspirations.
+                                </span>
+                            </div>
+                            <br>
+                            <br>
+                            <center></center>
+
+                            <br>
+                            <br>
+                            <img src="images/1.JPG" style="border:90px;margin:90px;float:top;height:600px;">
+                            <img src="images/2.JPG" style="border:90px;margin:90px;float:top;height:600px;">
+                            <img src="images/3.JPG" style="border:90px;margin:90px;float:top;height:240px;">
+                            <img src="images/5.JPG" style="border:90px;margin:90px;float:top;height:400px;">
+                            <img src="images/4.JPG" style="border:90px;margin:90px;float:top;height:600px;">
+
+                            <br>
+                            <br>
+                            <img src="images/Animals.jpg" style="border-left:200px;margin:90px;float:top;height:600px;">
+                            <br>
+
+                            <br>
+                        </p>
+                    </div>
+                    <button id="back">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
