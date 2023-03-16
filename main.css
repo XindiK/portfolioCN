@@ -1,6 +1,7 @@
 .my-container {
     /* border:3px solid green;  */
     width: 100vw;
+
 }
 
 .header-row {
@@ -10,17 +11,26 @@
 
 }
 
-
-svg textPath {
+/* svg textPath {
     background-image: url("images/cover/modsynth.png") no-repeat;
+} */
+
+.desc-col {
+    overflow-x: scroll;
+    /* border:3px solid rgb(20, 160, 39); */
 }
 
+/* --------------front page content styles ------------ */
 .frontPage {
     position: relative;
 }
 
 .frontPage img {
     width: 40vw;
+}
+
+.frontPage a{
+    color:transparent;
 }
 
 #catbase{
@@ -36,21 +46,21 @@ svg textPath {
     z-index: 1;
     display: none;
 }
+
 .hidden {
     position: absolute;
-    left: 9.3vw;
-    top: 10vw;
+    left: 22vw;
+    /* left :9.3vw (on top of can) */
+    top: 13.5vw;
+    /* top values:10vw (on top of can)*/
     border: none;
-    outline: none;
+    height: 5vw;
+    width: 11vw;
+    border-radius: 50%;
+    outline: none; 
     background-color:transparent;
-    color:rgb(96, 97, 95, 0.19);
+    /* color:rgb(96, 97, 95, 0.19); */
 }
-
-.desc-col {
-    overflow-x: scroll;
-    /* border:3px solid rgb(20, 160, 39); */
-}
-
 
 .title-col {
     /* border:3px solid blue;  */
