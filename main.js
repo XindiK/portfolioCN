@@ -65,6 +65,18 @@ $(document).ready(function () {
         $("#catbase").css("display", "inherit");
         $("#cattop").css("display", "none");
     });
+//     $("button#hidden").click(function () {
+//         console.log("hidden");
+//         $(".projects").hide();
+//         $("#catImg").hide();
+//         $("#about").hide();
+//         $("#portfolio").hide();
+//         $("#contact").hide();
+//         $("button#btn3").removeClass(" active");
+//         $("button#btn1").removeClass(" active");
+//         $("button#btn2").removeClass(" active");
+//         $(".hidden").fadeIn();
+//     });
 });
 
 //For each project in portfolio
