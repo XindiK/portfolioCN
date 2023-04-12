@@ -21,9 +21,9 @@
 }
 
 /* --------------front page content styles ------------ */
-.frontPage {
+/* .frontPage {
     position: relative;
-}
+} */
 
 .frontPage img {
     width: 40vw;
@@ -124,7 +124,6 @@
     margin: 0 auto;
     padding-top: 5vh;
     /* border:3px solid rgb(185, 64, 189); */
-
 }
 
 .tabcontent.show {
@@ -212,11 +211,13 @@ span a{
     font-family: 'Oswald', sans-serif;
     outline: none;
     float: right;
+    margin-bottom: 10%;
 }
 
 #back:hover {
     text-shadow: 3px 3px rgb(149, 222, 240);
     outline: none;
+
 }
 
 #projimg {
@@ -227,4 +228,7 @@ span a{
     /* padding: 100; */
     margin: 50;
     border: 50;
+}
+iframe{
+    margin-top: 10%;
 }
