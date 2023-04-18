@@ -50,10 +50,11 @@
 }
 
 .hidden {
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     left: 22vw;
     /* left :9.3vw (on top of can) */
-    top: 13.5vw;
+    top: -16vw;
     /* top values:10vw (on top of can)*/
     border: none;
     height: 5vw;
