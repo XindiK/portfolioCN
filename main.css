@@ -16,8 +16,9 @@
 } */
 
 .desc-col {
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     /* border:3px solid rgb(20, 160, 39); */
+    line-height: 1.5em;
 }
 
 /* --------------front page content styles ------------ */

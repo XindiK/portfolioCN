@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit a Request</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('iGIED661eQ_sUA9JJ');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                // this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                // emailjs.sendForm('contact_service', 'contact', this)
+                emailjs.sendForm('default_service', 'template_qpvfd8n', '#contact')
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <script>
+        // Get a reference to the <p> element by its ID
+        var resultElement = document.getElementById("result");
+
+        // Set the text content of the <p> element to "success"
+        resultElement.textContent = "Message Successfully Sent";
+    </script>
+    <style>
+        /* Set the width and height of the text box to match iPhone 13 mini dimensions */
+        #box {
+            padding: 5%;
+            width: 2.3in;
+            height: 5.4in;
+        }
+        #contact {
+            
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form id="contact">
+            <div id="box">
+                Message from the artist's assitant:
+                <br>
+                <br>
+                Sorry I'm currently not available to assit you.
+                <br>
+                Please feel free to leave a message and I will try to be with you as soon as possible.
+                <br>
+                <br>
+                <label>Name</label>
+                <br>
+                <br>
+                <input type="text" name="user_name" placeholder="Optional">
+                <br>
+                <br>
+                <label>Email</label>
+                <br>
+                <br>
+                <input type="email" name="user_email" placeholder="Optional">
+                <br>
+                <br>
+                <label>Message</label>
+                <br>
+                <br>
+                <textarea name="message" placeholder="Optional"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </center>
+    <p id="result"></p>
+</body>
+</html>
+
