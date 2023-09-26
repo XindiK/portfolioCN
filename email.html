@@ -17,12 +17,13 @@
                 // this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
                 // emailjs.sendForm('contact_service', 'contact', this)
-                emailjs.sendForm('default_service', 'template_qpvfd8n', '#contact')
+                emailjs.sendForm('default_service', 'template_rzwzvsn', '#contact')
                     .then(function() {
                         console.log('SUCCESS!');
                     }, function(error) {
                         console.log('FAILED...', error);
                     });
+                    alert("Demo request submitted!");
             });
         }
     </script>
@@ -41,7 +42,7 @@
             height: 5.4in;
         }
         #contact {
-            
+
         }
     </style>
 </head>
