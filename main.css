@@ -1,6 +1,7 @@
 .my-container {
     /* border:3px solid green;  */
     width: 100vw;
+
 }
 
 .header-row {
@@ -10,17 +11,29 @@
 
 }
 
-
-svg textPath {
+/* svg textPath {
     background-image: url("images/cover/modsynth.png") no-repeat;
+} */
+
+.desc-col {
+    /* overflow-x: scroll; */
+    /* border:3px solid rgb(20, 160, 39); */
+    line-height: 1.5em;
 }
 
-.frontPage {
+/* --------------front page content styles ------------ */
+/* .frontPage {
     position: relative;
-}
+} */
 
 .frontPage img {
     width: 40vw;
+}
+
+.frontPage a{
+    color:transparent;
+    /* color:red; */
+
 }
 
 #catbase{
@@ -36,25 +49,24 @@ svg textPath {
     z-index: 1;
     display: none;
 }
+
 .hidden {
-    position: absolute;
-    left: 9.3vw;
-    top: 10vw;
+    /* position: absolute; */
+    position: relative;
+    left: 22vw;
+    /* left :9.3vw (on top of can) */
+    top: -16vw;
+    /* top values:10vw (on top of can)*/
     border: none;
-    outline: none;
+    height: 5vw;
+    width: 11vw;
+    border-radius: 50%;
+    outline: none; 
     background-color:transparent;
-    color:rgb(96, 97, 95, 0.19);
+    /* background-color:green; */
+    /* color:rgb(96, 97, 95, 0.19); */
+    font-size: 400%;
 }
-
-.hidden a{
-    color:rgb(96, 97, 95, 0.19);
-}
-
-.desc-col {
-    overflow-x: scroll;
-    /* border:3px solid rgb(20, 160, 39); */
-}
-
 
 .title-col {
     /* border:3px solid blue;  */
@@ -114,7 +126,6 @@ svg textPath {
     margin: 0 auto;
     padding-top: 5vh;
     /* border:3px solid rgb(185, 64, 189); */
-
 }
 
 .tabcontent.show {
@@ -202,11 +213,13 @@ span a{
     font-family: 'Oswald', sans-serif;
     outline: none;
     float: right;
+    margin-bottom: 10%;
 }
 
 #back:hover {
     text-shadow: 3px 3px rgb(149, 222, 240);
     outline: none;
+
 }
 
 #projimg {
@@ -217,4 +230,7 @@ span a{
     /* padding: 100; */
     margin: 50;
     border: 50;
+}
+iframe{
+    margin-top: 10%;
 }

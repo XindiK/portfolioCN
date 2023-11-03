@@ -6,9 +6,10 @@ var activeVideo = 0;
 //To-do: add news section
 $(document).ready(function () {
     $(".projects").hide();
-    $("#portfolio").hide();
-    $("#contact").hide();
     $("#about").hide();
+    $("#portfolio").hide();
+    $("#news").hide();
+    $("#contact").hide();
     $("#catImg").fadeIn();
     $(".hidden").fadeIn();
 });
@@ -18,12 +19,14 @@ $(document).ready(function () {
         console.log("btn1");
         $(".projects").hide();
         $("#catImg").hide();
-        $("#portfolio").hide();
-        $("#contact").hide();
         $("#about").fadeIn();
+        $("#portfolio").hide();
+        $("#news").hide();
+        $("#contact").hide();
         $("button#btn1").addClass(" active");
         $("button#btn2").removeClass(" active");
         $("button#btn3").removeClass(" active");
+        $("button#btn4").removeClass(" active");
         $(".hidden").hide();
     });
 });
@@ -33,11 +36,13 @@ $(document).ready(function () {
         $(".projects").hide();
         $("#catImg").hide();
         $("#about").hide();
-        $("#contact").hide();
         $("#portfolio").fadeIn();
+        $("#news").hide();
+        $("#contact").hide();
         $("button#btn2").addClass(" active");
         $("button#btn1").removeClass(" active");
         $("button#btn3").removeClass(" active");
+        $("button#btn4").removeClass(" active");
         $(".hidden").hide();
     });
 });
@@ -48,10 +53,28 @@ $(document).ready(function () {
         $("#catImg").hide();
         $("#about").hide();
         $("#portfolio").hide();
-        $("#contact").fadeIn();
+        $("#news").fadeIn();
+        $("#contact").hide();
         $("button#btn3").addClass(" active");
         $("button#btn1").removeClass(" active");
         $("button#btn2").removeClass(" active");
+        $("button#btn4").removeClass(" active");
+        $(".hidden").hide();
+    });
+});
+$(document).ready(function () {
+    $("button#btn4").click(function () {
+        console.log("btn4");
+        $(".projects").hide();
+        $("#catImg").hide();
+        $("#about").hide();
+        $("#portfolio").hide();
+        $("#news").hide();
+        $("#contact").fadeIn();
+        $("button#btn4").addClass(" active");
+        $("button#btn1").removeClass(" active");
+        $("button#btn2").removeClass(" active");
+        $("button#btn3").removeClass(" active");
         $(".hidden").hide();
     });
 });
@@ -65,6 +88,18 @@ $(document).ready(function () {
         $("#catbase").css("display", "inherit");
         $("#cattop").css("display", "none");
     });
+//     $("button#hidden").click(function () {
+//         console.log("hidden");
+//         $(".projects").hide();
+//         $("#catImg").hide();
+//         $("#about").hide();
+//         $("#portfolio").hide();
+//         $("#contact").hide();
+//         $("button#btn3").removeClass(" active");
+//         $("button#btn1").removeClass(" active");
+//         $("button#btn2").removeClass(" active");
+//         $(".hidden").fadeIn();
+//     });
 });
 
 //For each project in portfolio
@@ -74,6 +109,7 @@ $(document).ready(function () {
         $("#catImg").hide();
         $("#about").hide();
         $("#portfolio").hide();
+        $("#news").hide();
         $("#contact").hide();
         $("#project1").fadeIn();
         $("#project2").hide();
@@ -90,6 +126,7 @@ $(document).ready(function () {
         $("#catImg").hide();
         $("#about").hide();
         $("#portfolio").hide();
+        $("#news").hide();
         $("#contact").hide();
         $("#project1").hide();
         $("#project2").fadeIn();
@@ -106,6 +143,7 @@ $(document).ready(function () {
         $("#catImg").hide();
         $("#about").hide();
         $("#portfolio").hide();
+        $("#news").hide();
         $("#contact").hide();
         $("#project1").hide();
         $("#project2").hide();
@@ -122,6 +160,7 @@ $(document).ready(function () {
         $("#catImg").hide();
         $("#about").hide();
         $("#portfolio").hide();
+        $("#news").hide();
         $("#contact").hide();
         $("#project1").hide();
         $("#project2").hide();
@@ -138,6 +177,7 @@ $(document).ready(function () {
         $("#catImg").hide();
         $("#about").hide();
         $("#portfolio").hide();
+        $("#news").hide();
         $("#contact").hide();
         $("#project1").hide();
         $("#project2").hide();
@@ -154,6 +194,7 @@ $(document).ready(function () {
         $("#catImg").hide();
         $("#about").hide();
         $("#portfolio").hide();
+        $("#news").hide();
         $("#contact").hide();
         $("#project1").hide();
         $("#project2").hide();
@@ -171,8 +212,9 @@ $(document).ready(function () {
         $(".projects").hide();
         $("#catImg").hide();
         $("#about").hide();
-        $("#contact").hide();
         $("#portfolio").fadeIn();
+        $("#news").hide();
+        $("#contact").hide();
     });
 });
 
