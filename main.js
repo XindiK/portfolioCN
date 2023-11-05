@@ -16,7 +16,8 @@ $(document).ready(function () {
 $(document).ready(function () {
 
     $("button#btn1").click(function () {
-        console.log("btn1");
+        console.log("btn1-about");
+        StopEmbedVideo();
         $(".projects").hide();
         $("#catImg").hide();
         $("#about").fadeIn();
@@ -32,7 +33,8 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
     $("button#btn2").click(function () {
-        console.log("btn2");
+        console.log("btn2-portfolio");
+        StopEmbedVideo();
         $(".projects").hide();
         $("#catImg").hide();
         $("#about").hide();
@@ -48,7 +50,8 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
     $("button#btn3").click(function () {
-        console.log("btn3");
+        console.log("btn3-news");
+        StopEmbedVideo();
         $(".projects").hide();
         $("#catImg").hide();
         $("#about").hide();
@@ -64,7 +67,8 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
     $("button#btn4").click(function () {
-        console.log("btn4");
+        console.log("btn4-contact");
+        StopEmbedVideo();
         $(".projects").hide();
         $("#catImg").hide();
         $("#about").hide();
@@ -82,6 +86,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("button#hidden").hover(function () {
         console.log("You've found the hidden button!");
+        StopEmbedVideo();
         $("#catbase").css("display", "none");
         $("#cattop").css("display", "inherit");
     }, function () {
@@ -106,6 +111,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("img#proj1").click(function () {
         console.log("project1");
+        StopEmbedVideo();
         $("#catImg").hide();
         $("#about").hide();
         $("#portfolio").hide();
@@ -123,6 +129,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("img#proj2").click(function () {
         console.log("project2");
+        StopEmbedVideo();
         $("#catImg").hide();
         $("#about").hide();
         $("#portfolio").hide();
@@ -140,6 +147,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("img#proj3").click(function () {
         console.log("project3");
+        StopEmbedVideo();
         $("#catImg").hide();
         $("#about").hide();
         $("#portfolio").hide();
@@ -157,6 +165,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("img#proj4").click(function () {
         console.log("project4");
+        StopEmbedVideo();
         $("#catImg").hide();
         $("#about").hide();
         $("#portfolio").hide();
@@ -174,6 +183,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("img#proj5").click(function () {
         console.log("project5");
+        StopEmbedVideo();
         $("#catImg").hide();
         $("#about").hide();
         $("#portfolio").hide();
@@ -191,6 +201,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("img#proj6").click(function () {
         console.log("project6");
+        StopEmbedVideo();
         $("#catImg").hide();
         $("#about").hide();
         $("#portfolio").hide();
