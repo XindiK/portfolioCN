@@ -28,12 +28,17 @@
 
 .frontPage img {
     width: 40vw;
+    object-fit: contain;
 }
 
 .frontPage a{
     color:transparent;
     /* color:red; */
+}
 
+p#text {
+    height: 5%;
+    line-height: 100%;
 }
 
 #catbase{
@@ -120,9 +125,10 @@
     /* display: none;
     opacity:0; */
     overflow: auto;
-    height: 650px;
+    /* height: 650px; */
+    /* height: 88vh; */
     margin-top: 30px;
-    width: 85vw;
+    /* width: 85vw; */
     margin: 0 auto;
     padding-top: 5vh;
     /* border:3px solid rgb(185, 64, 189); */
@@ -143,13 +149,14 @@
 .box {
     /* border:3px solid rgb(231, 235, 39); */
     height: auto;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     text-align: center;
 }
 
 .box img {
-    width: 300px;
-    margin-bottom: 30px;
+    width:80%;
+    margin: 30px;
+    object-fit: contain;
 }
 
 .box img:hover {
